@@ -291,36 +291,40 @@ body {
       margin-top: 2em;
     }
 
-    // .project-container {
-    //   position: relative;
-    //   margin: 0 -30px;
-    //   /* add back section padding value */
-    //   // padding: 0.25rem 30px;
-    //   padding: 20vh 0;
+    .project-container {
+      position: relative;
+      margin: 0 -30px;
+      /* add back section padding value */
+      // padding: 0.25rem 30px;
+      padding: 3rem 0;
 
-    //   min-height: 140vh;
-    // }
+      // min-height: 140vh;
+    }
 
-    // .project-container:nth-child(even):before, .project-container:nth-child(even):after {
-    //   content: "";
-    //   position: absolute;
-    //   /* fill vertically */
-    //   top: 0;
-    //   bottom: 0;
-    //   width: 9600px;
-    //   right: 100%;
-    // }
+    .project-container:nth-child(even) {
+      color: $light;
+    }
 
-    // .project-container:nth-child(even):after {
-    //   width: 9600px;
-    //   left: 100%;
-    //   /* you're free to do something totally different here */
-    //   background: green;
-    // }
+    .project-container:nth-child(even):before, .project-container:nth-child(even):after {
+      content: "";
+      position: absolute;
+      /* fill vertically */
+      top: 0;
+      bottom: 0;
+      width: 9600px;
+      right: 100%;
+    }
 
-    // .project-container:nth-child(even), .project-container:nth-child(even):before, .project-container:nth-child(even):after {
-    //   background: $dark;
-    // }
+    .project-container:nth-child(even):after {
+      width: 9600px;
+      left: 100%;
+      /* you're free to do something totally different here */
+      background: green;
+    }
+
+    .project-container:nth-child(even), .project-container:nth-child(even):before, .project-container:nth-child(even):after {
+      background: $dark;
+    }
 
     .project {
       margin: 3em;
@@ -387,7 +391,7 @@ body {
 
         transition: all 0.1s;
 
-        @include threed-button(0.1, 0.3, 1px);
+        // @include threed-button(0, 0, 0px);
 
         span {
           margin: 1em;

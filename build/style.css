@@ -145,6 +145,28 @@ body {
       transform: translateY(2px); }
   #app #work h2 {
     margin-top: 2em; }
+  #app #work .project-container {
+    position: relative;
+    margin: 0 -30px;
+    /* add back section padding value */
+    padding: 3rem 0; }
+  #app #work .project-container:nth-child(even) {
+    color: #ccc; }
+  #app #work .project-container:nth-child(even):before, #app #work .project-container:nth-child(even):after {
+    content: "";
+    position: absolute;
+    /* fill vertically */
+    top: 0;
+    bottom: 0;
+    width: 9600px;
+    right: 100%; }
+  #app #work .project-container:nth-child(even):after {
+    width: 9600px;
+    left: 100%;
+    /* you're free to do something totally different here */
+    background: green; }
+  #app #work .project-container:nth-child(even), #app #work .project-container:nth-child(even):before, #app #work .project-container:nth-child(even):after {
+    background: #555; }
   #app #work .project {
     margin: 3em; }
     #app #work .project .project-title {
@@ -176,15 +198,7 @@ body {
       background-color: #fff;
       margin-right: 2em;
       text-decoration: none;
-      transition: all 0.1s;
-      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-      transition: 0.1s all ease; }
-      #app #work .project .project-link:hover {
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4); }
-      #app #work .project .project-link:active {
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-        -webkit-transform: translateY(1px);
-        transform: translateY(1px); }
+      transition: all 0.1s; }
       #app #work .project .project-link span {
         margin: 1em;
         color: #555;
