@@ -1,6 +1,0 @@
-[Facebook](http://facebook.com/davidisaaclee)
-[Vine](https://vine.co/u/907854929723539456)
-[Soundcloud](http://www.soundcloud.com/davidisaaclee)
-[Bandcamp](http://david-lee.bandcamp.com)
-[Vimeo](https://vimeo.com/davidisaaclee)
-[Github](https://github.com/davidisaaclee)
